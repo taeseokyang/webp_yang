@@ -1,0 +1,42 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+#career{
+
+}
+h1{
+  margin-left: 20px;
+}
+img{
+  margin-left: 100px;
+  margin-right: 100px;
+  width:800px;
+  height:550px;
+}
+
+.index_img{
+  margin-left : 250px;
+  width:500px;
+  height:600px;
+
+}
+fieldset {
+  background-color: #FFFFFF;
+  padding: 20px;
+  margin-top: 30px;
+  width: 900px;
+  font-size: 30px;
+  height: 300px;
+}
+ul{
+  list-style: none;
+}
+legend{
+  background-color: #5d8d4e;
+  color: #FFFFFF;
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
