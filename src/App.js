@@ -1,44 +1,33 @@
-import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
-
-import index from "./Component/index";
-import Introduction from "./Component/Introduction";
-import Project from "./Component/Project";
-import Contest from "./Component/Contest";
-import Career from "./Component/Career";
-
+import { BrowserRouter} from "react-router-dom";
+import styled from 'styled-components';
+import Nav from "./Component/Nav";
+import Footer from "./Component/Footer";
+import Content from "./Component/Content";
 import "./App.css";
 
 function App() {
-  return (
-    <BrowserRouter>
-      <header>
-      함께하고 싶은 개발자 양태석의 PORTFOLIO
-      </header>
+  const main = {
+    width : "900px",
+    height : "1300px",
+    margin : "30px auto",
+    padding :"0px",
+    borderRadius: "40px",
+    // padding : "20px",
+    boxShadow: "rgba(149, 157, 165, 0.2) 0px 0px 24px",
+    // backgroundColor: "white",
+    // background: "linear-gradient(0deg, rgba(125, 189, 103, 0.47) 8.56%, rgba(125, 189, 103, 0.00) 100%)"
+  }
+  
+  
 
-      <div className="container">
-        <nav>
-          <Link to={"/introduction"}>나의 소개</Link>
-          <Link to={"/project"}>프로 젝트</Link>
-          <Link to={"/contest"}>공 모 전 </Link>
-          <Link to={"/career"}>나의 경력</Link>
-        </nav>
-        <main>
-          <Routes>
-            <Route path="/" Component={index} />
-            <Route path="/introduction" Component={Introduction} />
-            <Route path="/project" Component={Project} />
-            <Route path="/contest" Component={Contest} />
-            <Route path="/career" Component={Career} />
-          </Routes>
-        </main>
+  return ( 
+    <BrowserRouter>
+      <div style={main} class="main">
+        <Nav></Nav>
+        <Content></Content>
+        <Footer></Footer>
       </div>
-      <footer>
-        <i>
-          Copyright 2023. YANG all rights reserved.
-          <br />
-          연락처 : 010-5239-5132
-        </i>
-      </footer>
+
     </BrowserRouter>
   );
 }

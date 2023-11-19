@@ -1,6 +1,6 @@
-import '../CSS/Selfintro.css';
+// import '../CSS/Selfintro.css';
 
-const SelfIntro = () => {
+const StackCareer = () => {
   return (
     <div id ="selfIntro">
       
@@ -41,4 +41,4 @@ const SelfIntro = () => {
   );
 };
 
-export default SelfIntro;
+export default StackCareer;
