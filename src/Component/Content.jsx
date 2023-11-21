@@ -8,7 +8,7 @@ import styled from "styled-components";
 
 const ContentLay = styled.div`
   width : 860px;
-  height: 800px;
+  height: 1000px;
   padding: 20px;
 
 `;

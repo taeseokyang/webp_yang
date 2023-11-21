@@ -1,13 +1,13 @@
 import styled from "styled-components";
 const MainText = styled.div`
   text-align: left;
-  margin : 60px 10px;
+  margin : 50px 10px;
   width: 840px;
   height: 30px;
-  font-size : 100px;
+  font-size : 90px;
   font-weight: bold;
-  line-height:120px;
-  color : #aaaaaa;
+  line-height:130px;
+  color : #dddddd;
   & span{
     display: inline-block;
     color: rgba(175, 218, 160, 1);

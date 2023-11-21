@@ -22,7 +22,7 @@ const PagePoint = styled.button.attrs(props => ({
   border: none;
   border-radius: 40px;
   background-color: ${({ isOn }) => (isOn ? 'rgba(175, 218, 160, 0.77)' : '#FFFFFF')};
-  box-shadow: ${({ isOn }) => (isOn ? 'none' : '0px 0px 10px 0px rgba(100, 100, 100, 0.31) inset')};
+  box-shadow: ${({ isOn }) => (isOn ? 'none' : '0px 0px 10px 0px rgba(100, 100, 100, 0.2) inset')};
 `;
 
 function Introduction() {

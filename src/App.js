@@ -3,10 +3,12 @@ import styled from 'styled-components';
 import Nav from "./Component/Nav";
 import Footer from "./Component/Footer";
 import Content from "./Component/Content";
-import Move from "./Component/Move";
+// import Move from "./Component/Move";
+import Float from "./Component/Float";
 
 const Main = styled.div`
-  width: 900px;z
+  background-color: #ffffff;
+  width: 900px;
   height: 1300px;
   margin: 30px auto;
   padding: 0;
@@ -20,6 +22,7 @@ function App() {
       
       <Main>
         {/* <Move></Move> */}
+        {/* <Float></Float> */}
         <Nav></Nav>
         <Content></Content>
         <Footer></Footer>
