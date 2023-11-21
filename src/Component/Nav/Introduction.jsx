@@ -21,8 +21,8 @@ const PagePoint = styled.button.attrs(props => ({
   height: 30px;
   border: none;
   border-radius: 40px;
-  background-color: rgba(175, 218, 160, 0.77);
-  box-shadow: 0px 0px 10px 0px rgba(132, 177, 116, 0.51) inset;
+  background-color: ${({ isOn }) => (isOn ? 'rgba(175, 218, 160, 0.77)' : '#FFFFFF')};
+  box-shadow: ${({ isOn }) => (isOn ? 'none' : '0px 0px 10px 0px rgba(100, 100, 100, 0.31) inset')};
 `;
 
 function Introduction() {
@@ -33,9 +33,8 @@ function Introduction() {
   return (
     <div>
       <ButtonBox>
-      {intros.map((intro, index) => (
-        <PagePoint onClick={contentChange} value={index}>
-        </PagePoint>
+      {intros.map((intro, idx) => (
+        <PagePoint isOn={index == idx} onClick={contentChange} value={idx}></PagePoint>
       ))}
       </ButtonBox>
       {intros[index].content}

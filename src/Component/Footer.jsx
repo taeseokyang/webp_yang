@@ -22,9 +22,9 @@ const Footer = () => {
     return (
         <FooterLay>
             <Text>
-                Copyright 2023. YANG all rights reserved.
+                Copyright 2023. YangTaeSeok all rights reserved.
                 <br/>
-                연락처 : 010-5239-5132
+                Contact 010-5239-5132
             </Text>
         </FooterLay>
     );
