@@ -22,7 +22,7 @@ function App() {
       
       <Main>
         {/* <Move></Move> */}
-        {/* <Float></Float> */}
+        <Float></Float>
         <Nav></Nav>
         <Content></Content>
         <Footer></Footer>

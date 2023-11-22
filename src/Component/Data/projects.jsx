@@ -48,17 +48,17 @@ const projects = [
   },
   {
     title: "English Learning Web",
-    description : "가천헤럴드 영자신문사의 기사를 손쉽게 볼 수 있도록 모바일 웹",
+    description : "스폰지밥 스크립트를 통해 영어공부를 할 수 있는 웹",
     stacks : [
-      "Spring Boot",
+      "PHP",
       "MySQL",
-      "React"
+      "Python"
     ],
     features:[
-      "가독성이 좋은 UI",
-      "댓글 작성",
-      "게임을 통한 이벤트 응모 기능",
-      "URL입력으로 쉬운 기사 업로드"
+      "동장과 상황 문자열 삭제 기능",
+      "방명록 기능",
+      "스크랩 기능",
+      "단어장 기능"
 
     ]
   },

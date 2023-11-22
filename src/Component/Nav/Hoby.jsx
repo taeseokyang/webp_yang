@@ -34,6 +34,7 @@ const DescBox = styled.div`
   border-radius: 40px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 24px;
   & h2{
+    margin: 25px;
     font-size:40px;
     color:#555555;
   }
