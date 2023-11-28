@@ -1,6 +1,6 @@
-import MyInfo from "../Intro/MyInfo";
-import StackCareer from "../Intro/StackCareer";
-import Main from "../Intro/Main";
+import MyInfo from "../Content/Intro/MyInfo";
+import StackCareer from "../Content/Intro/StackCareer";
+import Main from "../Content/Intro/Main";
 const intros = [
   {
     tab: "MyInfo",

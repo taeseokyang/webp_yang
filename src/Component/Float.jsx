@@ -1,16 +1,13 @@
-// import { useState } from "react";
-// import careers from "../Data/careers";
-// import "../CSS/Career.css";
 import styled from "styled-components";
 
 const Bar = styled.div`
   float: left;
   display: inline;
   position: sticky;   
-  top: 100px;
+  top: 120px;
   border:none;
   text-align: center;
-  margin-left:-85px;
+  margin-left:-70px;
   width: 70px;
   height: 250px;
   border-radius: 100px;
@@ -29,16 +26,27 @@ const Bar = styled.div`
     text-decoration:none;
   }
 `;
-const Move = () => {
+const BarButton = styled.a.attrs(props => ({
+    href: props.href
+  }))`
+color:#ffffff;
+font-size : 60px;
+text-decoration:none;
+`;
+
+
+const Float= () => {
   return (
     <span>
         <Bar>
-            <a href="https://github.com/taeseokyang/webp_yang"><img src="/images/github_icon.png" alt="깃허브 아이콘" /></a>
-            <a href="https://velog.io/@yang0123">B</a><br/>
-            <a href="mailto:ts.yang.0123@gmail.com">@</a>
+            <BarButton href="https://github.com/taeseokyang/webp_yang">
+              <img src="/images/github_icon.png" alt="깃허브 아이콘" />
+            </BarButton>
+            <BarButton href="https://velog.io/@yang0123">B</BarButton><br/>
+            <BarButton href="mailto:ts.yang.0123@gmail.com">@</BarButton>
         </Bar>
     </span>
   );
 }
 
-export default Move;
+export default Float;

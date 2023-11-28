@@ -4,13 +4,12 @@ import Project from "./Nav/Project";
 import Ability from "./Nav/Ability";
 import Hobby from "./Nav/Hoby";
 import styled from "styled-components";
-// import index from ".";
 
 const ContentLay = styled.div`
   width : 860px;
-  height: 1000px;
+  height: 1100px;
   padding: 20px;
-
+  margin: 0px auto;
 `;
 
 const Content = () => {

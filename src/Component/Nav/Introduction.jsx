@@ -1,26 +1,23 @@
 import { useState } from "react";
 import intros from "../Data/Intros";
 import styled from "styled-components";
-
 const ButtonBox = styled.div`
-  // display: inline-block;
   text-align: center;
   width : 860px;
   height: 30px;
-
 `;
 
 const PagePoint = styled.button.attrs(props => ({
-  onClick: props.onClick, // 동적으로 href 속성을 지정
-  value: props.value, // 동적으로 color 속성을 지정
+  onClick: props.onClick, 
+  value: props.value, 
 }))`
   display: inline-block;
   text-align: center;
   margin : 0px 10px;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   border: none;
-  border-radius: 40px;
+  border-radius: 30px;
   background-color: ${({ isOn }) => (isOn ? 'rgba(175, 218, 160, 0.77)' : '#FFFFFF')};
   box-shadow: ${({ isOn }) => (isOn ? 'none' : '0px 0px 10px 0px rgba(100, 100, 100, 0.2) inset')};
 `;
@@ -41,5 +38,4 @@ function Introduction() {
     </div>
   );
 }
-
 export default Introduction;

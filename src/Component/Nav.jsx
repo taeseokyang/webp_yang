@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 const NavLay = styled.div`
   width: 900px;
+  margin: 0px auto;
   height: 100px;
 `;
 
@@ -16,7 +17,6 @@ const NavBox = styled.div`
   background-color: rgba(175, 218, 160, 0.77);
   box-shadow: 0px 0px 10px 0px rgba(132, 177, 116, 0.51) inset;
 `;
-
 const NavButton = styled.div`
   display: inline-block;
   margin: 10px;
@@ -45,10 +45,18 @@ const Nav = () => {
     return (
         <NavLay>
           <NavBox>
-            <NavButton isOn={location.pathname.startsWith('/introduction') ||  location.pathname === '/'}><Link to={"/introduction"}>Introduction</Link></NavButton>
-            <NavButton isOn={location.pathname.startsWith('/project') }><Link to={"/project"}>Project</Link></NavButton>
-            <NavButton isOn={location.pathname.startsWith('/hobby')}><Link to={"/hobby"}>Hobby</Link></NavButton>
-            <NavButton isOn={location.pathname.startsWith('/ability')}><Link to={"/ability"}>Ability</Link></NavButton>
+            <NavButton isOn={location.pathname.startsWith('/introduction') ||  location.pathname === '/'}>
+              <Link to={"/introduction"}>Introduction</Link>
+            </NavButton>
+            <NavButton isOn={location.pathname.startsWith('/project') }>
+              <Link to={"/project"}>Project</Link>
+            </NavButton>
+            <NavButton isOn={location.pathname.startsWith('/hobby')}>
+              <Link to={"/hobby"}>Hobby</Link>
+            </NavButton>
+            <NavButton isOn={location.pathname.startsWith('/ability')}>
+              <Link to={"/ability"}>Ability</Link>
+            </NavButton>
           </NavBox>
         </NavLay>
   );

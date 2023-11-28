@@ -1,31 +1,26 @@
 import { useState } from "react";
 import hobbies from "../Data/hobbies";
-// import "../CSS/Career.css";
 import styled from "styled-components";
 
 const ContentBox = styled.div`
   margin-top:60px;
   width : 860px;
   & h1{
-    // width: 840px;
     height: 30px;
     font-size : 70px;
     font-weight: bold;
     color : rgba(175, 218, 160, 1);
     margin-bottom:90px;
   }
-
 `;
 const Img = styled.img.attrs(props => ({
   src: props.src,
   alt: props.alt
 }))`
-  // width : 400px;
   height: 380px;
   display: block;
   margin: 0px auto;
   margin-bottom:30px;
-
 `;
 const DescBox = styled.div`
   padding:20px;
@@ -42,14 +37,11 @@ const DescBox = styled.div`
   color:#888888;
   font-weight: bold;
   line-height:40px;
-
 `;
 const ButtonBox = styled.div`
-  // display: inline-block;
   text-align: center;
   width : 860px;
   height: 30px;
-
 `;
 
 const PagePoint = styled.button.attrs(props => ({
@@ -98,5 +90,4 @@ function Hobby() {
     </div>
   );
 }
-
 export default Hobby;

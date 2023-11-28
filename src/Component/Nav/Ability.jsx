@@ -1,12 +1,10 @@
 import { useState } from "react";
 import abilities from "../Data/abilities";
-// import "../CSS/Career.css";
 import styled from "styled-components";
 const ContentBox = styled.div`
   margin-top:60px;
   width : 860px;
   & h1{
-    // width: 840px;
     height: 30px;
     font-size : 70px;
     font-weight: bold;
@@ -19,7 +17,6 @@ const Img = styled.img.attrs(props => ({
   src: props.src,
   alt: props.alt
 }))`
-  // width : 400px;
   height: 380px;
   display: block;
   margin: 0px auto;
@@ -33,7 +30,6 @@ const DescBox = styled.div`
   line-height:40px;
 `;
 const ButtonBox = styled.div`
-  // display: inline-block;
   text-align: center;
   width : 860px;
   height: 30px;
@@ -55,7 +51,7 @@ const PagePoint = styled.button.attrs(props => ({
   box-shadow: ${({ isOn }) => (isOn ? 'none' : '0px 0px 10px 0px rgba(100, 100, 100, 0.2) inset')};
 `;
 
-function Carears() {
+function Ability() {
   const [index, setIndex] = useState(0);
   const contentChange = (event) => {
     setIndex(event.target.value);
@@ -70,7 +66,6 @@ function Carears() {
       </ButtonBox>
       <ContentBox>
         <h1>{abilities[index].title}</h1>
-        {/* <Img src={`/images/hobby${parseInt(index)+1}.png`} alt="취미 사진"></Img> */}
         <DescBox>
           <ul>
             {abilities[index].contents.map((thing, idx) => (
@@ -82,5 +77,4 @@ function Carears() {
     </div>
   );
 }
-
-export default Carears;
+export default Ability;
