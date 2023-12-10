@@ -22,7 +22,7 @@ function App() {
         <Move></Move>
         <Float></Float>
         <Nav></Nav>
-        <Content></Content>
+        <Content> </Content>
         <Footer></Footer>
       </Main>
     </BrowserRouter>
